@@ -1,0 +1,18 @@
+<mat-card>
+  <section class="mat-card-header-wrapper">
+    <mat-card-header *ngIf="maintitle">
+      <button mat-mini-fab color="accent" mat-card-avatar>
+        <mat-icon>{{titleicon}}</mat-icon>
+      </button>
+      <mat-card-title>{{maintitle}}</mat-card-title>
+      <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <ng-content select="app-layout-form-actions"></ng-content>
+    </mat-card-actions>
+  </section>
+  <mat-card-content>
+    <mat-progress-bar mode="indeterminate" color="accent" *ngIf="loading"></mat-progress-bar>
+    <ng-content select="app-layout-form-content"></ng-content>
+  </mat-card-content>
+</mat-card>

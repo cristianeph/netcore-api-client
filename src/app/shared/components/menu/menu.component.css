@@ -1,0 +1,9 @@
+.logo-wrapper {
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: center;
+}
+
+.logo-wrapper img {
+  display: flex;
+}

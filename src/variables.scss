@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+$app-light: mat-palette($mat-green, 100);
+
+$app-primary: mat-palette($mat-green, 500);
+$app-accent: mat-palette($mat-red, 800);
+$app-warn: mat-palette($mat-red, A700);
+
+/*Aqui se exportan las variables de Angular-Material como globales*/
+
+$light: mat-color($app-primary);
+
+$primary: mat-color($app-primary);
+$accent:  mat-color($app-accent);
+$warn:    mat-color($app-warn);

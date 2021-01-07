@@ -1,0 +1,13 @@
+<h3 *ngIf="title">{{title}}</h3>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     routerLinkActive
+     #rla="routerLinkActive"
+     *ngFor="let tab of tabs"
+     (click)="navigate(tab)"
+     [active]="rla.isActive"
+     [disabled]="tab.disabled"
+     [routerLink]="tab.route">
+    {{ tab.label }}
+  </a>
+</nav>

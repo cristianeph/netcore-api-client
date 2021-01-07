@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <button mat-flat-button color="accent" (click)="setMode()">
+    <mat-icon *ngIf="state === true">menu_open</mat-icon>
+    <mat-icon *ngIf="state === false">menu</mat-icon>
+  </button>
+  <span class="header-spacer"></span>
+  <h3 mat-subheader>{{user}}</h3>
+  <button mat-flat-button color="warn" (click)="logout()">
+    <mat-icon>power_settings_new</mat-icon>
+  </button>
+</mat-toolbar>

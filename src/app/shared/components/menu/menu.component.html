@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="logo-wrapper">
+  Cliente .Net Core API + JWT
+</mat-toolbar>
+<mat-list class="menu-container">
+  <h3 mat-subheader>Menú</h3>
+  <mat-list-item>
+    <h4 mat-line>Clientes: </h4>
+  </mat-list-item>
+  <mat-list-item class="menu-depth-second">
+    <mat-icon mat-list-icon>view_list</mat-icon>
+    <a [routerLink]="['/clients/list']" mat-line>Lista</a>
+  </mat-list-item>
+  <mat-list-item class="menu-depth-second">
+    <mat-icon mat-list-icon>add_box</mat-icon>
+    <a [routerLink]="['/clients/form']" mat-line>Crear</a>
+  </mat-list-item>
+  <mat-list-item class="menu-depth-second">
+    <mat-icon mat-list-icon>timeline</mat-icon>
+    <a [routerLink]="['/clients/projection']" mat-line>Análisis y Proyección</a>
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,26 @@
+<article class="form-wrapper">
+  <section class="login-form mat-elevation-z8">
+    <section *ngIf="loading">
+      <mat-progress-bar mode="indeterminate" color="accent"></mat-progress-bar>
+    </section>
+    <div class="field single">
+      <h3 class="set">Login</h3>
+    </div>
+    <form [formGroup]="form">
+      <div class="field single">
+        <mat-form-field class="set">
+          <input matInput placeholder="Usuario" formControlName="userName">
+        </mat-form-field>
+      </div>
+      <div class="field single">
+        <mat-form-field class="set">
+          <input matInput placeholder="Contraseña" formControlName="password"
+                 type="password">
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary"
+              [disabled]="(form.get('userName').value === null)"
+              (click)="login()"><mat-icon>checkmark</mat-icon> Ingresar</button>
+    </form>
+  </section>
+</article>
