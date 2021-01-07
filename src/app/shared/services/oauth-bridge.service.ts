@@ -1,6 +1,6 @@
 import {EventEmitter, Injectable} from '@angular/core';
-import {HttpClient, HttpParams} from '@angular/common/http';
-import {IOauthLogin, IOauthToken, IUsuario} from '../interfaces/oauth-interface';
+import {HttpClient} from '@angular/common/http';
+import {IOauthLogin, IOauthToken} from '../interfaces/oauth-interface';
 import {Router} from '@angular/router';
 import {environment} from '../../../environments/environment';
 import {MessageProviderService} from './message-provider.service';

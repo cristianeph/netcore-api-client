@@ -7,6 +7,13 @@ import {ClientsComponent} from './clients.component';
 import {SharedModule} from '../shared/shared.module';
 import {FormComponent} from './form/form.component';
 import {ProjectionComponent} from './projection/projection.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -14,7 +21,14 @@ import {ProjectionComponent} from './projection/projection.component';
   imports: [
     CommonModule,
     ClientsRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDatepickerModule,
+    MatTableModule,
   ]
 })
 export class ClientsModule {
