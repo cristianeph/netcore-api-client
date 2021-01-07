@@ -1,1 +1,31 @@
-<p>form works!</p>
+<app-layout-form>
+  <app-layout-form-content>
+    <form [formGroup]="form">
+      <div class="field single">
+        <mat-form-field class="set" appearance="fill">
+          <mat-label>Nombres</mat-label>
+          <input matInput formControlName="firstName">
+        </mat-form-field>
+      </div>
+      <div class="field single">
+        <mat-form-field class="set" appearance="fill">
+          <mat-label>Apellidos</mat-label>
+          <input matInput formControlName="lastName">
+        </mat-form-field>
+      </div>
+      <div class="field single">
+        <mat-form-field class="set" appearance="fill">
+          <mat-label>Fecha de Nacimiento</mat-label>
+          <input matInput formControlName="birthdate"autocomplete="off"
+                 [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </form>
+  </app-layout-form-content>
+  <app-layout-form-actions>
+    <button mat-stroked-button (click)="save()"><mat-icon>save</mat-icon> Guardar</button>
+    <button mat-stroked-button><mat-icon>cleaning_services</mat-icon> Limpiar</button>
+  </app-layout-form-actions>
+</app-layout-form>
