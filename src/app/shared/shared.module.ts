@@ -22,12 +22,16 @@ import {RouterModule} from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import {LayoutTabComponent} from './components/layout-tab/layout-tab.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import {LayoutFormActionsComponent} from './components/layout-form-actions/layout-form-actions.component';
+import {LayoutFormContentComponent} from './components/layout-form-content/layout-form-content.component';
 
 
 @NgModule({
   declarations: [
     LayoutComponent,
     LayoutFormComponent,
+    LayoutFormActionsComponent,
+    LayoutFormContentComponent,
     AlertConfirmComponent,
     AlertMessageComponent,
     AlertSnackComponent,
@@ -55,6 +59,8 @@ import {MatTabsModule} from '@angular/material/tabs';
   exports: [
     LayoutComponent,
     LayoutFormComponent,
+    LayoutFormActionsComponent,
+    LayoutFormContentComponent,
     HeaderComponent,
     LayoutTabComponent,
   ]

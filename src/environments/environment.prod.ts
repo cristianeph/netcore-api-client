@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiserver: 'http://localhost:63625',
-  helpersserver: 'http://localhost:63625',
-  oauthserver: 'http://localhost:63625',
+  apiserver: 'http://netcore-api.us-east-1.elasticbeanstalk.com',
+  helpersserver: 'http://netcore-api.us-east-1.elasticbeanstalk.com',
+  oauthserver: 'http://netcore-api.us-east-1.elasticbeanstalk.com',
 };
