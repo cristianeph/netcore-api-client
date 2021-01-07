@@ -27,6 +27,10 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  reset(): void {
+    this.form.reset();
+  }
+
   async save(): Promise<void> {
     const raw: IClients = this.form.getRawValue();
     raw.birthdate = moment(raw.birthdate).format('DD/MM/YYYY');
